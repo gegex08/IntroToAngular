@@ -1,0 +1,10 @@
+﻿<input ng-model="home.val1" type="number" />
+<select ng-model="home.op">
+    <option>+</option>
+    <option>-</option>
+    <option>*</option>
+    <option>/</option>
+</select>
+<input ng-model="home.val2" type="number" />
+<input type="button" value="=" ng-click="home.add()" />
+{{home.total}}

@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="IntroToAngular">
+<head>
+    <title></title>
+
+    @Styles.Render("~/Content/css")
+
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+
+    <script src="~/ngApp/app.js"></script>
+    <script src="~/ngApp/controllers/home.js"></script>
+    <script src="~/ngApp/controllers/details.js"></script>
+    <script src="~/ngApp/controllers/list.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <ng-view></ng-view>
+    </div>
+
+</body>
+</html>
